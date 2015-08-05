@@ -1,15 +1,14 @@
 doctype html
 html class="no-js" lang="#{data.config.lang}"
   head
-    meta charset="utf-8"
-    title = page_title
-    meta name="description" content="#{page_description}"
-    meta name="HandheldFriendly" content="True"
-    meta name="MobileOptimized" content="320"
-    meta name="viewport" content="width=device-width, initial-scale=1"
-    meta http-equiv="cleartype" content="on"
+    = partial 'layouts/partials/main_meta_tags'
+    - if build?
+      = partial 'layouts/partials/favicons'
+    = partial 'layouts/partials/head_links'
 
-    = favicon_tag 'favicon.ico'
+    - if build?
+      = partial 'layouts/partials/favicons'
+
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic,latin"
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor"

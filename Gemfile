@@ -6,10 +6,12 @@ gem "middleman", "~>3.3.12"
 gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
+gem "middleman-favicon-maker", "~> 3.7"
+gem 'middleman-deploy', '~> 1.0'
 
 # Compress and optimise images
 # https://github.com/plasticine/middleman-imageoptim
-# gem "middleman-imageoptim", "~> 0.0.4"
+gem 'middleman-imageoptim'
 # Compress PNGs after build
 # gem install middleman-smusher
 

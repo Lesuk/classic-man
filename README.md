@@ -19,7 +19,7 @@ Static site starter template for [Middleman](http://middlemanapp.com/).
   $ gem install middleman
   ```
 
-2. Install slimmer template
+2. Install template
 
   ```
   $ mkdir ~/.middleman #if it doesn't exist yet
@@ -59,7 +59,7 @@ Static site starter template for [Middleman](http://middlemanapp.com/).
 You run the application by starting the Middleman server:
 
 ```shell
-middleman s
+bundle exec middleman s
 ```
 
 ## Building the Static Files
@@ -67,5 +67,5 @@ middleman s
 To build the static files:
 
 ```shell
-middleman build
+bundle exec middleman build
 ```
